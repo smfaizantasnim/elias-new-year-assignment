@@ -1,18 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elias New Year 2024</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./fontawesome.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        /* Add styles for your container div */
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 1100px;
+            /* Adjust height as needed */
+            background-image: url('./resources/bannerimage.png');
+            /* Replace 'path/to/your/background-image.jpg' with the actual path to your image */
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+
+        /* Add styles for the black overlay */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Adjust the opacity as needed */
+        }
+
+        /* Additional styles for content inside the container (optional) */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            /* Text color on top of the image */
+            text-align: center;
+        }
+        .celebration{
+            font-family: Merriweather;
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 95px; 
+        }
+     .happyenewyear{
+            font-family: Merriweather;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400; 
+        }
+
+        .container-two{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .red-color65{
+            color: #F00;
+text-align: center;
+font-family: Inter;
+font-size: 88px;
+font-weight: 700; 
+        }
+        .red-color{
+            color: #F00;
+text-align: center;
+font-family: Inter;
+font-size: 24px;
+font-weight: 500; 
+        }
+        .all-catagories{
+            color: #070211;
+text-align: center;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700; 
+        }
+    </style>
 </head>
+
 <body>
-    <div class="banner">
-<h3 class="banner-greeting">Happy New Year</h3>
-<h2 class="banner-info">New Year Party Celebration</h2>
+
+    <!-- Your container div with background image and black overlay -->
+    <div class="image-container">
+        <!-- Black overlay -->
+        <div class="overlay"></div>
+
+        <!-- Optional content inside the container -->
+        <div class="content">
+            <h3 class="happyenewyear">Happy New Year</h3>
+            <h1 class="celebration">New Year Party <br>Celebration</h1>
+        </div>
     </div>
 
+
+    <div class="container-two">
+        <div>
+            <h2 class="red-color65">65% OFF</h2>
+            <p class="red-color">OUR HOLIDAY DEALS ARE BETTER</p>
+            <h3 class="all-catagories">ALL CATEGORIES</h3>
+            <img src="./resources/New Year Photo.png" alt="">
+        </div>
+
+    </div>
 </body>
+
 </html>
